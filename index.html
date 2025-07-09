@@ -222,6 +222,24 @@ input:focus, select:focus, textarea:focus {
   padding: 10px 12px;
   color: #333;
 }
+.floating-feedback {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #00796b;
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-decoration: none;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+.floating-feedback:hover {
+  background-color: #004d40;
+}
 
 
   </style>
@@ -579,6 +597,9 @@ function toggleHelp() {
       <p>© 2025 <strong>CyberEd Hub</strong> | Prompt Generator for Educators</p>
       <p>Developed by Mosero Nancy. Empowering educators through AI-driven tools. All rights reserved.</p>
 </footer>
+<a href="https://docs.google.com/forms/d/1qcLZbEBSGAGfLqzQK06pCJL9F8aQ-ATDNCUbVyb_58c/edit" target="_blank" class="floating-feedback" title="Leave feedback">
+  📝 Feedback
+</a>
 
 </body>
 </html>
